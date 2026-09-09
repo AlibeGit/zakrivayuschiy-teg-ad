@@ -285,6 +285,10 @@
   color: var(--accent-color);
 }
 
+.dialog__form {
+  inline-size: 100%;
+}
+
 .dialog__button {
   inline-size: 100%;
   block-size: var(--button-height);

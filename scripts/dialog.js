@@ -1,13 +1,22 @@
-/* Открытие и закрытие модального окна «Сохранить на память». */
+/* Открытие и закрытие модального окна «Сохранить на память».
+   Отправка формы отменяется явно, чтобы страница ни при каких условиях не перезагружалась. */
 
 const saveButton = document.querySelector('.save-button');
 const dialog = document.querySelector('.dialog');
-const dialogButton = document.querySelector('.dialog__button');
+const dialogForm = document.querySelector('.dialog__form');
 
-saveButton.addEventListener('click', () => {
-  dialog.showModal();
+saveButton.addEventListener('click', (evt) => {
+  evt.preventDefault();
+
+  if (!dialog.open) {
+    dialog.showModal();
+  }
 });
 
-dialogButton.addEventListener('click', () => {
-  dialog.close();
+dialogForm.addEventListener('submit', (evt) => {
+  evt.preventDefault();
+
+  if (dialog.open) {
+    dialog.close();
+  }
 });
