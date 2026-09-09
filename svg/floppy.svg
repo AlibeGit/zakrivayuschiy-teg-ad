@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position: absolute">
+  <symbol id="floppy" viewBox="0 0 39 39">
+    <path
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linejoin="round"
+      d="M3 6.5A3.5 3.5 0 0 1 6.5 3H27l9 9v20.5a3.5 3.5 0 0 1-3.5 3.5h-26A3.5 3.5 0 0 1 3 32.5Z"
+    />
+    <path
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linejoin="round"
+      d="M11 3v10h15V3"
+    />
+    <path
+      fill="currentColor"
+      d="M20.5 5.5h3.5v6h-3.5z"
+    />
+    <path
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linejoin="round"
+      d="M9 36V21h21v15"
+    />
+    <path
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      d="M13 26h13M13 30.5h13"
+    />
+  </symbol>
+</svg>

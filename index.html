@@ -3,7 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Закрывающий тег — дневник пути в вёрстке: восемь точек курса, честные мысли и эмоции на каждой из них."
+    />
     <title>Закрывающий тег</title>
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./images/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -11,8 +18,651 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
-    <header class="header"></header>
-    <main></main>
+    <header class="header section">
+      <h1 class="header__logo">&lt;/HTML&gt;</h1>
+      <p class="header__subtitle">закрывающий тег</p>
+    </header>
+
+    <main class="content">
+      <article class="card section">
+        <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+        <div class="card__image-wrapper">
+          <picture class="card__picture">
+            <source
+              srcset="./images/card-1-small.webp 371w, ./images/card-1.webp 696w"
+              sizes="(max-width: 375px) 375px, 696px"
+              type="image/webp"
+            />
+            <source
+              srcset="./images/card-1-small.jpg 371w, ./images/card-1.jpg 696w"
+              sizes="(max-width: 375px) 375px, 696px"
+              type="image/jpeg"
+            />
+            <img
+              class="card__image filter-contrast"
+              src="./images/card-1.jpg"
+              alt="Расчерченная миллиметровая сетка со строгой рамкой в центре — чистое рабочее поле перед началом работы."
+              width="696"
+              height="696"
+              loading="lazy"
+            />
+          </picture>
+          <span class="card__label">стартую</span>
+        </div>
+        <div class="card__content">
+          <div class="card__text-wrapper">
+            <p class="card__text">Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
+            <p class="card__text">Я записался почти на спор — просто посмотреть, что это вообще такое. Открыл первый урок, увидел слово «вёрстка» и понял, что не знаю о ней ровным счётом ничего. Странно, но именно это меня и успокоило: терять было нечего, оставалось только начать.</p>
+          </div>
+          <div class="card__buttons">
+            <button
+              class="card__icon-button"
+              type="button"
+              aria-label="Поставить лайк карточке «Фритрек и нулевой спринт: Подготовка к работе»"
+            >
+              <svg
+              class="like-icon"
+              width="27"
+              height="24"
+              viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  fill="var(--contour-color)"
+                  fill-rule="evenodd"
+                  d="M 19.50 31.00 C 13.50 26.50 5.00 20.50 5.00 14.30 C 5.00 10.00 8.40 6.50 12.60 6.50 C 15.90 6.50 18.40 8.60 19.50 10.80 C 20.60 8.60 23.10 6.50 26.40 6.50 C 30.60 6.50 34.00 10.00 34.00 14.30 C 34.00 20.50 25.50 26.50 19.50 31.00 Z M 19.50 29.29 C 14.34 25.41 7.03 20.25 7.03 14.92 C 7.03 11.23 9.95 8.21 13.57 8.21 C 16.40 8.21 18.55 10.02 19.50 11.91 C 20.45 10.02 22.60 8.21 25.43 8.21 C 29.05 8.21 31.97 11.23 31.97 14.92 C 31.97 20.25 24.66 25.41 19.50 29.29 Z"
+                />
+                <path
+                  class="main-body"
+                  fill="none"
+                  d="M 19.50 29.29 C 14.34 25.41 7.03 20.25 7.03 14.92 C 7.03 11.23 9.95 8.21 13.57 8.21 C 16.40 8.21 18.55 10.02 19.50 11.91 C 20.45 10.02 22.60 8.21 25.43 8.21 C 29.05 8.21 31.97 11.23 31.97 14.92 C 31.97 20.25 24.66 25.41 19.50 29.29 Z"
+                />
+                <path
+                  class="core"
+                  fill="none"
+                  d="M 19.50 22.96 C 17.10 21.16 13.70 18.76 13.70 16.28 C 13.70 14.56 15.06 13.16 16.74 13.16 C 18.06 13.16 19.06 14.00 19.50 14.88 C 19.94 14.00 20.94 13.16 22.26 13.16 C 23.94 13.16 25.30 14.56 25.30 16.28 C 25.30 18.76 21.90 21.16 19.50 22.96 Z"
+                />
+              </g>
+              <path
+                class="sparks"
+                fill="var(--animation-fill-color)"
+                d="M 4.20 2.80 Q 4.75 5.45 7.40 6.00 Q 4.75 6.55 4.20 9.20 Q 3.65 6.55 1.00 6.00 Q 3.65 5.45 4.20 2.80 Z M 34.80 2.80 Q 35.35 5.45 38.00 6.00 Q 35.35 6.55 34.80 9.20 Q 34.25 6.55 31.60 6.00 Q 34.25 5.45 34.80 2.80 Z M 4.20 26.90 Q 4.75 28.95 6.80 29.50 Q 4.75 30.05 4.20 32.10 Q 3.65 30.05 1.60 29.50 Q 3.65 28.95 4.20 26.90 Z M 34.80 26.90 Q 35.35 28.95 37.40 29.50 Q 35.35 30.05 34.80 32.10 Q 34.25 30.05 32.20 29.50 Q 34.25 28.95 34.80 26.90 Z"
+              />
+            </svg>
+            </button>
+            <button class="button card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card section">
+        <h2 class="card__title">1 спринт: Я — чистый лист</h2>
+        <div class="card__image-wrapper">
+          <picture class="card__picture">
+            <source
+              srcset="./images/card-2-small.webp 371w, ./images/card-2.webp 696w"
+              sizes="(max-width: 375px) 375px, 696px"
+              type="image/webp"
+            />
+            <source
+              srcset="./images/card-2-small.jpg 371w, ./images/card-2.jpg 696w"
+              sizes="(max-width: 375px) 375px, 696px"
+              type="image/jpeg"
+            />
+            <img
+              class="card__image filter-sepia"
+              src="./images/card-2.jpg"
+              alt="Лист линованной бумаги с полями — пустой и ждущий первой строчки."
+              width="696"
+              height="696"
+              loading="lazy"
+            />
+          </picture>
+          <span class="card__label">тревога</span>
+        </div>
+        <div class="card__content">
+          <div class="card__text-wrapper">
+            <p class="card__text">На первых этапах мы работали со страхами и сомнениями, которые часто испытывают новички. Один из них — страх перед чистым листом. Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим ощущением скрываются более глубокие вопросы: с чего начать? а вдруг будет слишком сложно? что, если я не справлюсь?</p>
+            <p class="card__text">Пустой index.html пугал меня сильнее любой теории. Я мог полчаса смотреть на мигающий курсор и не написать ни строчки. Помогло простое правило: не пытаться сделать всё сразу, а поставить один тег. Потом ещё один. Страница собиралась из мелочей — и страх куда-то делся.</p>
+          </div>
+          <div class="card__buttons">
+            <button
+              class="card__icon-button"
+              type="button"
+              aria-label="Поставить лайк карточке «1 спринт: Я — чистый лист»"
+            >
+              <svg
+              class="like-icon"
+              width="27"
+              height="24"
+              viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  fill="var(--contour-color)"
+                  fill-rule="evenodd"
+                  d="M 19.50 31.00 C 13.50 26.50 5.00 20.50 5.00 14.30 C 5.00 10.00 8.40 6.50 12.60 6.50 C 15.90 6.50 18.40 8.60 19.50 10.80 C 20.60 8.60 23.10 6.50 26.40 6.50 C 30.60 6.50 34.00 10.00 34.00 14.30 C 34.00 20.50 25.50 26.50 19.50 31.00 Z M 19.50 29.29 C 14.34 25.41 7.03 20.25 7.03 14.92 C 7.03 11.23 9.95 8.21 13.57 8.21 C 16.40 8.21 18.55 10.02 19.50 11.91 C 20.45 10.02 22.60 8.21 25.43 8.21 C 29.05 8.21 31.97 11.23 31.97 14.92 C 31.97 20.25 24.66 25.41 19.50 29.29 Z"
+                />
+                <path
+                  class="main-body"
+                  fill="none"
+                  d="M 19.50 29.29 C 14.34 25.41 7.03 20.25 7.03 14.92 C 7.03 11.23 9.95 8.21 13.57 8.21 C 16.40 8.21 18.55 10.02 19.50 11.91 C 20.45 10.02 22.60 8.21 25.43 8.21 C 29.05 8.21 31.97 11.23 31.97 14.92 C 31.97 20.25 24.66 25.41 19.50 29.29 Z"
+                />
+                <path
+                  class="core"
+                  fill="none"
+                  d="M 19.50 22.96 C 17.10 21.16 13.70 18.76 13.70 16.28 C 13.70 14.56 15.06 13.16 16.74 13.16 C 18.06 13.16 19.06 14.00 19.50 14.88 C 19.94 14.00 20.94 13.16 22.26 13.16 C 23.94 13.16 25.30 14.56 25.30 16.28 C 25.30 18.76 21.90 21.16 19.50 22.96 Z"
+                />
+              </g>
+              <path
+                class="sparks"
+                fill="var(--animation-fill-color)"
+                d="M 4.20 2.80 Q 4.75 5.45 7.40 6.00 Q 4.75 6.55 4.20 9.20 Q 3.65 6.55 1.00 6.00 Q 3.65 5.45 4.20 2.80 Z M 34.80 2.80 Q 35.35 5.45 38.00 6.00 Q 35.35 6.55 34.80 9.20 Q 34.25 6.55 31.60 6.00 Q 34.25 5.45 34.80 2.80 Z M 4.20 26.90 Q 4.75 28.95 6.80 29.50 Q 4.75 30.05 4.20 32.10 Q 3.65 30.05 1.60 29.50 Q 3.65 28.95 4.20 26.90 Z M 34.80 26.90 Q 35.35 28.95 37.40 29.50 Q 35.35 30.05 34.80 32.10 Q 34.25 30.05 32.20 29.50 Q 34.25 28.95 34.80 26.90 Z"
+              />
+            </svg>
+            </button>
+            <button class="button card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card section">
+        <h2 class="card__title">1 спринт: А если не получится?</h2>
+        <div class="card__image-wrapper">
+          <picture class="card__picture">
+            <source
+              srcset="./images/card-3-small.webp 371w, ./images/card-3.webp 696w"
+              sizes="(max-width: 375px) 375px, 696px"
+              type="image/webp"
+            />
+            <source
+              srcset="./images/card-3-small.jpg 371w, ./images/card-3.jpg 696w"
+              sizes="(max-width: 375px) 375px, 696px"
+              type="image/jpeg"
+            />
+            <img
+              class="card__image filter-brightness"
+              src="./images/card-3.jpg"
+              alt="Одинокая молния, разрезающая тёмное ночное небо."
+              width="696"
+              height="696"
+              loading="lazy"
+            />
+          </picture>
+          <span class="card__label">страх</span>
+        </div>
+        <div class="card__content">
+          <div class="card__text-wrapper">
+            <p class="card__text">Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро померкнуть и смениться ожиданием провала. Или вы, наоборот, могли вдохновиться успехами и поверить в себя.</p>
+            <p class="card__text">Первый проект я сдал и весь вечер ждал, что придёт ревью и всё развалится. Оно пришло — с длинным списком правок. Оказалось, это не приговор, а инструкция. С того вечера я перестал читать замечания как оценку себя и начал читать их как подсказки.</p>
+          </div>
+          <div class="card__buttons">
+            <button
+              class="card__icon-button"
+              type="button"
+              aria-label="Поставить лайк карточке «1 спринт: А если не получится?»"
+            >
+              <svg
+              class="like-icon"
+              width="27"
+              height="24"
+              viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  fill="var(--contour-color)"
+                  fill-rule="evenodd"
+                  d="M 19.50 31.00 C 13.50 26.50 5.00 20.50 5.00 14.30 C 5.00 10.00 8.40 6.50 12.60 6.50 C 15.90 6.50 18.40 8.60 19.50 10.80 C 20.60 8.60 23.10 6.50 26.40 6.50 C 30.60 6.50 34.00 10.00 34.00 14.30 C 34.00 20.50 25.50 26.50 19.50 31.00 Z M 19.50 29.29 C 14.34 25.41 7.03 20.25 7.03 14.92 C 7.03 11.23 9.95 8.21 13.57 8.21 C 16.40 8.21 18.55 10.02 19.50 11.91 C 20.45 10.02 22.60 8.21 25.43 8.21 C 29.05 8.21 31.97 11.23 31.97 14.92 C 31.97 20.25 24.66 25.41 19.50 29.29 Z"
+                />
+                <path
+                  class="main-body"
+                  fill="none"
+                  d="M 19.50 29.29 C 14.34 25.41 7.03 20.25 7.03 14.92 C 7.03 11.23 9.95 8.21 13.57 8.21 C 16.40 8.21 18.55 10.02 19.50 11.91 C 20.45 10.02 22.60 8.21 25.43 8.21 C 29.05 8.21 31.97 11.23 31.97 14.92 C 31.97 20.25 24.66 25.41 19.50 29.29 Z"
+                />
+                <path
+                  class="core"
+                  fill="none"
+                  d="M 19.50 22.96 C 17.10 21.16 13.70 18.76 13.70 16.28 C 13.70 14.56 15.06 13.16 16.74 13.16 C 18.06 13.16 19.06 14.00 19.50 14.88 C 19.94 14.00 20.94 13.16 22.26 13.16 C 23.94 13.16 25.30 14.56 25.30 16.28 C 25.30 18.76 21.90 21.16 19.50 22.96 Z"
+                />
+              </g>
+              <path
+                class="sparks"
+                fill="var(--animation-fill-color)"
+                d="M 4.20 2.80 Q 4.75 5.45 7.40 6.00 Q 4.75 6.55 4.20 9.20 Q 3.65 6.55 1.00 6.00 Q 3.65 5.45 4.20 2.80 Z M 34.80 2.80 Q 35.35 5.45 38.00 6.00 Q 35.35 6.55 34.80 9.20 Q 34.25 6.55 31.60 6.00 Q 34.25 5.45 34.80 2.80 Z M 4.20 26.90 Q 4.75 28.95 6.80 29.50 Q 4.75 30.05 4.20 32.10 Q 3.65 30.05 1.60 29.50 Q 3.65 28.95 4.20 26.90 Z M 34.80 26.90 Q 35.35 28.95 37.40 29.50 Q 35.35 30.05 34.80 32.10 Q 34.25 30.05 32.20 29.50 Q 34.25 28.95 34.80 26.90 Z"
+              />
+            </svg>
+            </button>
+            <button class="button card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card section">
+        <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
+        <div class="card__image-wrapper">
+          <picture class="card__picture">
+            <source
+              srcset="./images/card-4-small.webp 371w, ./images/card-4.webp 696w"
+              sizes="(max-width: 375px) 375px, 696px"
+              type="image/webp"
+            />
+            <source
+              srcset="./images/card-4-small.jpg 371w, ./images/card-4.jpg 696w"
+              sizes="(max-width: 375px) 375px, 696px"
+              type="image/jpeg"
+            />
+            <img
+              class="card__image filter-saturate"
+              src="./images/card-4.jpg"
+              alt="Мишень из концентрических колец с крошечной красной точкой ровно в центре."
+              width="696"
+              height="696"
+              loading="lazy"
+            />
+          </picture>
+          <span class="card__label">идеал рядом</span>
+        </div>
+        <div class="card__content">
+          <div class="card__text-wrapper">
+            <p class="card__text">На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много ещё впереди. Вы могли попытаться погнаться за идеалом и понять, что он недостижим. А, может, вы вовсе и не подвержены перфекционизму и вместо того, чтобы сделать идеально, старались просто сделать.</p>
+            <p class="card__text">Я умею часами двигать блок на один пиксель и называть это работой. В какой-то момент я понял, что идеальной вёрстки не существует, а дедлайн вполне себе существует. Теперь у меня есть внутренний таймер: сделал хорошо — отпусти.</p>
+          </div>
+          <div class="card__buttons">
+            <button
+              class="card__icon-button"
+              type="button"
+              aria-label="Поставить лайк карточке «2 спринт: Погоня за идеалом»"
+            >
+              <svg
+              class="like-icon"
+              width="27"
+              height="24"
+              viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  fill="var(--contour-color)"
+                  fill-rule="evenodd"
+                  d="M 19.50 31.00 C 13.50 26.50 5.00 20.50 5.00 14.30 C 5.00 10.00 8.40 6.50 12.60 6.50 C 15.90 6.50 18.40 8.60 19.50 10.80 C 20.60 8.60 23.10 6.50 26.40 6.50 C 30.60 6.50 34.00 10.00 34.00 14.30 C 34.00 20.50 25.50 26.50 19.50 31.00 Z M 19.50 29.29 C 14.34 25.41 7.03 20.25 7.03 14.92 C 7.03 11.23 9.95 8.21 13.57 8.21 C 16.40 8.21 18.55 10.02 19.50 11.91 C 20.45 10.02 22.60 8.21 25.43 8.21 C 29.05 8.21 31.97 11.23 31.97 14.92 C 31.97 20.25 24.66 25.41 19.50 29.29 Z"
+                />
+                <path
+                  class="main-body"
+                  fill="none"
+                  d="M 19.50 29.29 C 14.34 25.41 7.03 20.25 7.03 14.92 C 7.03 11.23 9.95 8.21 13.57 8.21 C 16.40 8.21 18.55 10.02 19.50 11.91 C 20.45 10.02 22.60 8.21 25.43 8.21 C 29.05 8.21 31.97 11.23 31.97 14.92 C 31.97 20.25 24.66 25.41 19.50 29.29 Z"
+                />
+                <path
+                  class="core"
+                  fill="none"
+                  d="M 19.50 22.96 C 17.10 21.16 13.70 18.76 13.70 16.28 C 13.70 14.56 15.06 13.16 16.74 13.16 C 18.06 13.16 19.06 14.00 19.50 14.88 C 19.94 14.00 20.94 13.16 22.26 13.16 C 23.94 13.16 25.30 14.56 25.30 16.28 C 25.30 18.76 21.90 21.16 19.50 22.96 Z"
+                />
+              </g>
+              <path
+                class="sparks"
+                fill="var(--animation-fill-color)"
+                d="M 4.20 2.80 Q 4.75 5.45 7.40 6.00 Q 4.75 6.55 4.20 9.20 Q 3.65 6.55 1.00 6.00 Q 3.65 5.45 4.20 2.80 Z M 34.80 2.80 Q 35.35 5.45 38.00 6.00 Q 35.35 6.55 34.80 9.20 Q 34.25 6.55 31.60 6.00 Q 34.25 5.45 34.80 2.80 Z M 4.20 26.90 Q 4.75 28.95 6.80 29.50 Q 4.75 30.05 4.20 32.10 Q 3.65 30.05 1.60 29.50 Q 3.65 28.95 4.20 26.90 Z M 34.80 26.90 Q 35.35 28.95 37.40 29.50 Q 35.35 30.05 34.80 32.10 Q 34.25 30.05 32.20 29.50 Q 34.25 28.95 34.80 26.90 Z"
+              />
+            </svg>
+            </button>
+            <button class="button card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card section">
+        <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
+        <div class="card__image-wrapper">
+          <picture class="card__picture">
+            <source
+              srcset="./images/card-5-small.webp 371w, ./images/card-5.webp 696w"
+              sizes="(max-width: 375px) 375px, 696px"
+              type="image/webp"
+            />
+            <source
+              srcset="./images/card-5-small.jpg 371w, ./images/card-5.jpg 696w"
+              sizes="(max-width: 375px) 375px, 696px"
+              type="image/jpeg"
+            />
+            <img
+              class="card__image filter-hue-rotate"
+              src="./images/card-5.jpg"
+              alt="Множество полупрозрачных цветных кругов, которые накладываются друг на друга."
+              width="696"
+              height="696"
+              loading="lazy"
+            />
+          </picture>
+          <span class="card__label">люди</span>
+        </div>
+        <div class="card__content">
+          <div class="card__text-wrapper">
+            <p class="card__text">Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против целого мира). Вас окружали одногруппники, команда сопровождения и просто близкие люди, которым можно пожаловаться, если очередной макет просто так не поддавался. Осваивать что-то новое легче, когда рядом есть единомышленники, не правда ли?</p>
+            <p class="card__text">Самое неожиданное открытие курса — что я здесь не один. Чат группы вытаскивал меня из тупиков быстрее любой документации. А объяснить чужую ошибку оказалось лучшим способом разобраться в своей.</p>
+          </div>
+          <div class="card__buttons">
+            <button
+              class="card__icon-button"
+              type="button"
+              aria-label="Поставить лайк карточке «2 спринт: О тех, кто рядом»"
+            >
+              <svg
+              class="like-icon"
+              width="27"
+              height="24"
+              viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  fill="var(--contour-color)"
+                  fill-rule="evenodd"
+                  d="M 19.50 31.00 C 13.50 26.50 5.00 20.50 5.00 14.30 C 5.00 10.00 8.40 6.50 12.60 6.50 C 15.90 6.50 18.40 8.60 19.50 10.80 C 20.60 8.60 23.10 6.50 26.40 6.50 C 30.60 6.50 34.00 10.00 34.00 14.30 C 34.00 20.50 25.50 26.50 19.50 31.00 Z M 19.50 29.29 C 14.34 25.41 7.03 20.25 7.03 14.92 C 7.03 11.23 9.95 8.21 13.57 8.21 C 16.40 8.21 18.55 10.02 19.50 11.91 C 20.45 10.02 22.60 8.21 25.43 8.21 C 29.05 8.21 31.97 11.23 31.97 14.92 C 31.97 20.25 24.66 25.41 19.50 29.29 Z"
+                />
+                <path
+                  class="main-body"
+                  fill="none"
+                  d="M 19.50 29.29 C 14.34 25.41 7.03 20.25 7.03 14.92 C 7.03 11.23 9.95 8.21 13.57 8.21 C 16.40 8.21 18.55 10.02 19.50 11.91 C 20.45 10.02 22.60 8.21 25.43 8.21 C 29.05 8.21 31.97 11.23 31.97 14.92 C 31.97 20.25 24.66 25.41 19.50 29.29 Z"
+                />
+                <path
+                  class="core"
+                  fill="none"
+                  d="M 19.50 22.96 C 17.10 21.16 13.70 18.76 13.70 16.28 C 13.70 14.56 15.06 13.16 16.74 13.16 C 18.06 13.16 19.06 14.00 19.50 14.88 C 19.94 14.00 20.94 13.16 22.26 13.16 C 23.94 13.16 25.30 14.56 25.30 16.28 C 25.30 18.76 21.90 21.16 19.50 22.96 Z"
+                />
+              </g>
+              <path
+                class="sparks"
+                fill="var(--animation-fill-color)"
+                d="M 4.20 2.80 Q 4.75 5.45 7.40 6.00 Q 4.75 6.55 4.20 9.20 Q 3.65 6.55 1.00 6.00 Q 3.65 5.45 4.20 2.80 Z M 34.80 2.80 Q 35.35 5.45 38.00 6.00 Q 35.35 6.55 34.80 9.20 Q 34.25 6.55 31.60 6.00 Q 34.25 5.45 34.80 2.80 Z M 4.20 26.90 Q 4.75 28.95 6.80 29.50 Q 4.75 30.05 4.20 32.10 Q 3.65 30.05 1.60 29.50 Q 3.65 28.95 4.20 26.90 Z M 34.80 26.90 Q 35.35 28.95 37.40 29.50 Q 35.35 30.05 34.80 32.10 Q 34.25 30.05 32.20 29.50 Q 34.25 28.95 34.80 26.90 Z"
+              />
+            </svg>
+            </button>
+            <button class="button card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card section">
+        <h2 class="card__title">3 спринт: Обходные стратегии</h2>
+        <div class="card__image-wrapper">
+          <picture class="card__picture">
+            <source
+              srcset="./images/card-6-small.webp 371w, ./images/card-6.webp 696w"
+              sizes="(max-width: 375px) 375px, 696px"
+              type="image/webp"
+            />
+            <source
+              srcset="./images/card-6-small.jpg 371w, ./images/card-6.jpg 696w"
+              sizes="(max-width: 375px) 375px, 696px"
+              type="image/jpeg"
+            />
+            <img
+              class="card__image filter-invert"
+              src="./images/card-6.jpg"
+              alt="Запутанный узор из соединённых дуг, похожий на схему лабиринта."
+              width="696"
+              height="696"
+              loading="lazy"
+            />
+          </picture>
+          <span class="card__label">смекалка</span>
+        </div>
+        <div class="card__content">
+          <div class="card__text-wrapper">
+            <p class="card__text">На этом курсе вы постоянно решали разные задачи. В какой-то момент вам могло показаться, что решения просто иссякли. Значит, пришло время посмотреть на задачу под другим углом.</p>
+            <p class="card__text">Была задача, которую я решал три дня и так и не решил. А потом закрыл ноутбук, сходил погулять и по дороге понял, что всё это время смотрел не туда. Теперь пауза — часть моего рабочего процесса, а не признак лени.</p>
+          </div>
+          <div class="card__buttons">
+            <button
+              class="card__icon-button"
+              type="button"
+              aria-label="Поставить лайк карточке «3 спринт: Обходные стратегии»"
+            >
+              <svg
+              class="like-icon"
+              width="27"
+              height="24"
+              viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  fill="var(--contour-color)"
+                  fill-rule="evenodd"
+                  d="M 19.50 31.00 C 13.50 26.50 5.00 20.50 5.00 14.30 C 5.00 10.00 8.40 6.50 12.60 6.50 C 15.90 6.50 18.40 8.60 19.50 10.80 C 20.60 8.60 23.10 6.50 26.40 6.50 C 30.60 6.50 34.00 10.00 34.00 14.30 C 34.00 20.50 25.50 26.50 19.50 31.00 Z M 19.50 29.29 C 14.34 25.41 7.03 20.25 7.03 14.92 C 7.03 11.23 9.95 8.21 13.57 8.21 C 16.40 8.21 18.55 10.02 19.50 11.91 C 20.45 10.02 22.60 8.21 25.43 8.21 C 29.05 8.21 31.97 11.23 31.97 14.92 C 31.97 20.25 24.66 25.41 19.50 29.29 Z"
+                />
+                <path
+                  class="main-body"
+                  fill="none"
+                  d="M 19.50 29.29 C 14.34 25.41 7.03 20.25 7.03 14.92 C 7.03 11.23 9.95 8.21 13.57 8.21 C 16.40 8.21 18.55 10.02 19.50 11.91 C 20.45 10.02 22.60 8.21 25.43 8.21 C 29.05 8.21 31.97 11.23 31.97 14.92 C 31.97 20.25 24.66 25.41 19.50 29.29 Z"
+                />
+                <path
+                  class="core"
+                  fill="none"
+                  d="M 19.50 22.96 C 17.10 21.16 13.70 18.76 13.70 16.28 C 13.70 14.56 15.06 13.16 16.74 13.16 C 18.06 13.16 19.06 14.00 19.50 14.88 C 19.94 14.00 20.94 13.16 22.26 13.16 C 23.94 13.16 25.30 14.56 25.30 16.28 C 25.30 18.76 21.90 21.16 19.50 22.96 Z"
+                />
+              </g>
+              <path
+                class="sparks"
+                fill="var(--animation-fill-color)"
+                d="M 4.20 2.80 Q 4.75 5.45 7.40 6.00 Q 4.75 6.55 4.20 9.20 Q 3.65 6.55 1.00 6.00 Q 3.65 5.45 4.20 2.80 Z M 34.80 2.80 Q 35.35 5.45 38.00 6.00 Q 35.35 6.55 34.80 9.20 Q 34.25 6.55 31.60 6.00 Q 34.25 5.45 34.80 2.80 Z M 4.20 26.90 Q 4.75 28.95 6.80 29.50 Q 4.75 30.05 4.20 32.10 Q 3.65 30.05 1.60 29.50 Q 3.65 28.95 4.20 26.90 Z M 34.80 26.90 Q 35.35 28.95 37.40 29.50 Q 35.35 30.05 34.80 32.10 Q 34.25 30.05 32.20 29.50 Q 34.25 28.95 34.80 26.90 Z"
+              />
+            </svg>
+            </button>
+            <button class="button card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card section">
+        <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
+        <div class="card__image-wrapper">
+          <picture class="card__picture">
+            <source
+              srcset="./images/card-7-small.webp 371w, ./images/card-7.webp 696w"
+              sizes="(max-width: 375px) 375px, 696px"
+              type="image/webp"
+            />
+            <source
+              srcset="./images/card-7-small.jpg 371w, ./images/card-7.jpg 696w"
+              sizes="(max-width: 375px) 375px, 696px"
+              type="image/jpeg"
+            />
+            <img
+              class="card__image filter-blur"
+              src="./images/card-7.jpg"
+              alt="Тёмная стена из вертикальных потёков, будто по стеклу стекает дождь."
+              width="696"
+              height="696"
+              loading="lazy"
+            />
+          </picture>
+          <span class="card__label">выдох, но не сдаюсь</span>
+        </div>
+        <div class="card__content">
+          <div class="card__text-wrapper">
+            <p class="card__text">Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и проектную пора сдавать, и задачи хочется порешать, и в теории получше разобраться, и жизнь не забыть пожить. В такие моменты очень нужна концентрация. Вспомните, откуда вы её черпали.</p>
+            <p class="card__text">Был период, когда я открывал редактор и просто сидел. Ни сил, ни интереса, только чувство, что я отстал от всех. Вытащили маленькие шаги: пятнадцать минут в день, без подвигов. Оказалось, регулярность работает лучше вдохновения.</p>
+          </div>
+          <div class="card__buttons">
+            <button
+              class="card__icon-button"
+              type="button"
+              aria-label="Поставить лайк карточке «3 спринт: Когда опускаются руки»"
+            >
+              <svg
+              class="like-icon"
+              width="27"
+              height="24"
+              viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  fill="var(--contour-color)"
+                  fill-rule="evenodd"
+                  d="M 19.50 31.00 C 13.50 26.50 5.00 20.50 5.00 14.30 C 5.00 10.00 8.40 6.50 12.60 6.50 C 15.90 6.50 18.40 8.60 19.50 10.80 C 20.60 8.60 23.10 6.50 26.40 6.50 C 30.60 6.50 34.00 10.00 34.00 14.30 C 34.00 20.50 25.50 26.50 19.50 31.00 Z M 19.50 29.29 C 14.34 25.41 7.03 20.25 7.03 14.92 C 7.03 11.23 9.95 8.21 13.57 8.21 C 16.40 8.21 18.55 10.02 19.50 11.91 C 20.45 10.02 22.60 8.21 25.43 8.21 C 29.05 8.21 31.97 11.23 31.97 14.92 C 31.97 20.25 24.66 25.41 19.50 29.29 Z"
+                />
+                <path
+                  class="main-body"
+                  fill="none"
+                  d="M 19.50 29.29 C 14.34 25.41 7.03 20.25 7.03 14.92 C 7.03 11.23 9.95 8.21 13.57 8.21 C 16.40 8.21 18.55 10.02 19.50 11.91 C 20.45 10.02 22.60 8.21 25.43 8.21 C 29.05 8.21 31.97 11.23 31.97 14.92 C 31.97 20.25 24.66 25.41 19.50 29.29 Z"
+                />
+                <path
+                  class="core"
+                  fill="none"
+                  d="M 19.50 22.96 C 17.10 21.16 13.70 18.76 13.70 16.28 C 13.70 14.56 15.06 13.16 16.74 13.16 C 18.06 13.16 19.06 14.00 19.50 14.88 C 19.94 14.00 20.94 13.16 22.26 13.16 C 23.94 13.16 25.30 14.56 25.30 16.28 C 25.30 18.76 21.90 21.16 19.50 22.96 Z"
+                />
+              </g>
+              <path
+                class="sparks"
+                fill="var(--animation-fill-color)"
+                d="M 4.20 2.80 Q 4.75 5.45 7.40 6.00 Q 4.75 6.55 4.20 9.20 Q 3.65 6.55 1.00 6.00 Q 3.65 5.45 4.20 2.80 Z M 34.80 2.80 Q 35.35 5.45 38.00 6.00 Q 35.35 6.55 34.80 9.20 Q 34.25 6.55 31.60 6.00 Q 34.25 5.45 34.80 2.80 Z M 4.20 26.90 Q 4.75 28.95 6.80 29.50 Q 4.75 30.05 4.20 32.10 Q 3.65 30.05 1.60 29.50 Q 3.65 28.95 4.20 26.90 Z M 34.80 26.90 Q 35.35 28.95 37.40 29.50 Q 35.35 30.05 34.80 32.10 Q 34.25 30.05 32.20 29.50 Q 34.25 28.95 34.80 26.90 Z"
+              />
+            </svg>
+            </button>
+            <button class="button card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card section">
+        <h2 class="card__title">«Сейчас я здесь»</h2>
+        <div class="card__image-wrapper">
+          <picture class="card__picture">
+            <source
+              srcset="./images/card-8-small.webp 371w, ./images/card-8.webp 696w"
+              sizes="(max-width: 375px) 375px, 696px"
+              type="image/webp"
+            />
+            <source
+              srcset="./images/card-8-small.jpg 371w, ./images/card-8.jpg 696w"
+              sizes="(max-width: 375px) 375px, 696px"
+              type="image/jpeg"
+            />
+            <img
+              class="card__image filter-multiple"
+              src="./images/card-8.jpg"
+              alt="Рассветное солнце поднимается над силуэтом города."
+              width="696"
+              height="696"
+              loading="lazy"
+            />
+          </picture>
+          <span class="card__label">я тут и дышу</span>
+        </div>
+        <div class="card__content">
+          <div class="card__text-wrapper">
+            <p class="card__text">Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И этот мир постоянно меняется. Познать его полностью не получится, но это тот случай, когда важен сам процесс познания. Ведь часто путь — и есть результат.</p>
+            <p class="card__text">Я смотрю на свой первый макет и вижу в нём десяток ошибок — значит, за это время во мне что-то действительно изменилось. Впереди ещё JavaScript, фреймворки и куча вещей, о которых я пока даже не слышал. И меня это скорее радует, чем пугает.</p>
+          </div>
+          <div class="card__buttons">
+            <button
+              class="card__icon-button"
+              type="button"
+              aria-label="Поставить лайк карточке ««Сейчас я здесь»»"
+            >
+              <svg
+              class="like-icon"
+              width="27"
+              height="24"
+              viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  fill="var(--contour-color)"
+                  fill-rule="evenodd"
+                  d="M 19.50 31.00 C 13.50 26.50 5.00 20.50 5.00 14.30 C 5.00 10.00 8.40 6.50 12.60 6.50 C 15.90 6.50 18.40 8.60 19.50 10.80 C 20.60 8.60 23.10 6.50 26.40 6.50 C 30.60 6.50 34.00 10.00 34.00 14.30 C 34.00 20.50 25.50 26.50 19.50 31.00 Z M 19.50 29.29 C 14.34 25.41 7.03 20.25 7.03 14.92 C 7.03 11.23 9.95 8.21 13.57 8.21 C 16.40 8.21 18.55 10.02 19.50 11.91 C 20.45 10.02 22.60 8.21 25.43 8.21 C 29.05 8.21 31.97 11.23 31.97 14.92 C 31.97 20.25 24.66 25.41 19.50 29.29 Z"
+                />
+                <path
+                  class="main-body"
+                  fill="none"
+                  d="M 19.50 29.29 C 14.34 25.41 7.03 20.25 7.03 14.92 C 7.03 11.23 9.95 8.21 13.57 8.21 C 16.40 8.21 18.55 10.02 19.50 11.91 C 20.45 10.02 22.60 8.21 25.43 8.21 C 29.05 8.21 31.97 11.23 31.97 14.92 C 31.97 20.25 24.66 25.41 19.50 29.29 Z"
+                />
+                <path
+                  class="core"
+                  fill="none"
+                  d="M 19.50 22.96 C 17.10 21.16 13.70 18.76 13.70 16.28 C 13.70 14.56 15.06 13.16 16.74 13.16 C 18.06 13.16 19.06 14.00 19.50 14.88 C 19.94 14.00 20.94 13.16 22.26 13.16 C 23.94 13.16 25.30 14.56 25.30 16.28 C 25.30 18.76 21.90 21.16 19.50 22.96 Z"
+                />
+              </g>
+              <path
+                class="sparks"
+                fill="var(--animation-fill-color)"
+                d="M 4.20 2.80 Q 4.75 5.45 7.40 6.00 Q 4.75 6.55 4.20 9.20 Q 3.65 6.55 1.00 6.00 Q 3.65 5.45 4.20 2.80 Z M 34.80 2.80 Q 35.35 5.45 38.00 6.00 Q 35.35 6.55 34.80 9.20 Q 34.25 6.55 31.60 6.00 Q 34.25 5.45 34.80 2.80 Z M 4.20 26.90 Q 4.75 28.95 6.80 29.50 Q 4.75 30.05 4.20 32.10 Q 3.65 30.05 1.60 29.50 Q 3.65 28.95 4.20 26.90 Z M 34.80 26.90 Q 35.35 28.95 37.40 29.50 Q 35.35 30.05 34.80 32.10 Q 34.25 30.05 32.20 29.50 Q 34.25 28.95 34.80 26.90 Z"
+              />
+            </svg>
+            </button>
+            <button class="button card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer section">
+      <button class="button save-button" type="button">
+        <svg class="button__icon" width="21" height="21" aria-hidden="true">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
+    </footer>
+
+    <dialog class="dialog">
+      <div class="dialog__content">
+        <svg class="dialog__icon" width="39" height="39" aria-hidden="true">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+      </div>
+      <button class="button dialog__button" type="button">
+        <span class="button__text">Ок</span>
+      </button>
+    </dialog>
+
     <script src="./scripts/like.js"></script>
+    <script src="./scripts/dialog.js"></script>
   </body>
 </html>
